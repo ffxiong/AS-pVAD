@@ -15,7 +15,7 @@ It should be noted that the sampling rate is 16kHz, the frame-wise label is give
 
 The naming rules are as follows：
 
-S_track: 
+#  S_track: 
 noisy audio:      spk_xx(rir_names)_RIR_xx(noise_names)_snr?.wav
 clean audio:      spk.wav
 enrollment audio: spk_enroll.wav
@@ -24,8 +24,7 @@ vad_label:        spk_vad_label.npy
 
 For example, "FADG0_Single_403a_2_RIR_f16_snr40.wav" means: in this test audio, the target speaker's name is "FADG0", RIR type is "Single_403a_2", noise type is "f16", SNR is 40dB. Its corresponding clean audio is "FADG0.wav", enrollment audio is "FADG0_enroll.wav", pvad_label is "FADG0_pvad_label.npy", vad_label is "FADG0_vad_label.npy".
 
-
-M_track: (spk1 is the target speaker, spk2 is the interfering speaker)
+#  M_track: (spk1 is the target speaker, spk2 is the interfering speaker)
 noisy audio:      spk1_mixw_spk2_xx(rir_names)_RIR_xx(noise_names)_snr?_sir?.wav
 clean audio:      spk1.wav
 enrollment audio: spk1_enroll.wav
@@ -39,6 +38,7 @@ For each track, in enrollment case, we give the pVAD results in "pVAD_result" fo
 
 
 References:
+
 [1] V. Zue, S. Seneff, and J. Glass, “Speech database development: TIMIT and beyond,” in Speech Input/Output Assessment and Speech Databases, 1989, pp. Vol.2, 35–40.
 [2] A. Varga and H. J.M. Steeneken, “Assessment for automatic speech recognition: II. NOISEX-92: A database and an experiment to study the effect of additive noise on speech recognition systems,” Speech Communication, vol. 12, no. 3, pp. 247–251, 1993.
 [3] J. Eaton, N. D. Gaubitch, A. H. Moore, and P. A. Naylor, “Estimation of room acoustic parameters: The ACE challenge,” IEEE Trans Audio Speech Lang Process, vol. 24, no. 10, pp. 1681–1693, 2016.
